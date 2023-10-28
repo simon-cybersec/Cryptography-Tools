@@ -1,6 +1,7 @@
 # Atbash-Substituion  
 The Atbash-substitution replaces an 'a' with a 'z' and so on.  
 Encoding and decoding are done by the same method.  
+
 Plaintext:  
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z  
 Replacement:  
