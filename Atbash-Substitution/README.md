@@ -1,5 +1,5 @@
 # Atbash-Substituion  
-The Atbash-substitution replaces an 'a' with a 'z' and so on.  
+The Atbash-substitution replaces an 'a' with a 'z', a 'b' with a 'y' and so on.  
 Encoding and decoding are done by the same method.  
 
 Plaintext:  
