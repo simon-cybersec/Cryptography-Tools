@@ -2,7 +2,7 @@
 The Atbash-substitution replaces an 'a' with a 'z' and so on.  
 Encoding and decoding are done by the same method.  
 Plaintext:  
-a b c d e f g h i j k l m n o p q r s t u v w x y z  
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z  
 Replacement:  
 Z Y X W V U T S R Q P O N M L K J I H G F E D C B A  
   
@@ -11,10 +11,12 @@ Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
     atbash.py [-h] [-i INPUT | -m MESSAGE] [-o OUTPUT] [-g]
 
 Arguments:  
-  -h, --help: show this help message and exit  
-  -i INPUT, --input INPUT: Text input file  
-  -m MESSAGE, --message MESSAGE: Message from commandline  
-  -o OUTPUT, --output OUTPUT: Output file. Otherwise write to commandline  
+  -h, --help: Show this help message and exit  
+  
+  -i, --input <file.txt>: Input text file  
+  -m, --message <message>: Message from commandline  
+  
+  -o, --output <output.txt>: Output file. Otherwise write to commandline  
   -g, --group: Group the output in groupts of five  
 
   
