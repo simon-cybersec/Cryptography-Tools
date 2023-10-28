@@ -9,13 +9,10 @@ Replacement:  Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
     atbash.py [-h] [-i INPUT | -m MESSAGE] [-o OUTPUT] [-g]
 
 Arguments:  
-  -h, --help            show this help message and exit  
-  -i INPUT, --input INPUT  
-                        Text input file  
-  -m MESSAGE, --message MESSAGE  
-                        Message from commandline  
-  -o OUTPUT, --output OUTPUT  
-                        Output file. Otherwise write to commandline  
-  -g, --group           Group the output in groupts of five  
+  -h, --help: show this help message and exit  
+  -i INPUT, --input INPUT: Text input file  
+  -m MESSAGE, --message MESSAGE: Message from commandline  
+  -o OUTPUT, --output OUTPUT: Output file. Otherwise write to commandline  
+  -g, --group: Group the output in groupts of five  
 
   
