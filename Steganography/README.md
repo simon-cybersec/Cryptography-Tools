@@ -8,6 +8,11 @@ The tool is able to embed two different types of data into the pixels of an imag
 It extracts these either into files or in case of a simple message string also to the command line.
 
 # Usage  
+1. Create a new python virtual environment. Then install the required packages:
+
+    pip3 install -r requirements.txt
+
+2. Execute the python script:
 
     python3 steganography.py <image file> (-e | -d) [-m MESSAGE | -f FILE] [-o OUTPUT] [-h] 
 
@@ -21,22 +26,14 @@ It extracts these either into files or in case of a simple message string also t
 
 # Examples:  
 
-    # Encode cl message into image
-    # and decode it again
-    python3 steganography.py -e image.png -m "Hello world"
-    python3 steganography.py -d newImage.png
-
-    # Encode cl message into image with output filename specified
-    # and decode it again
+    # Encode a commandline message string into the image "image.png". The generated image "flower.png" is saved in the "outputs" directory:
     python3 steganography.py -e image.jpg -m "Hello world" -o flower.png
-    python3 steganography.py -d flower.png
+    # Decode it again:
+    python3 steganography.py -d outputs/flower.png
 
-    # Encode a file into an image
-    # and decode it again
-    python3 steganography.py -e image.jpg -f ../file.txt
-    python3 steganography.py -d myNewImage.png
-
-    # Decode an image and write output to file
+    # Encode the file "file.txt" into the pixels of the image "image.jpg" and save it as "flower.png":
+    python3 steganography.py -e image.jpg -f ../file.txt -o flower.png
+    # Decode it again:
     python3 steganography.py -d myNewImage.png -o myfile.txt
 
 # How the tool is structured
@@ -45,7 +42,7 @@ It extracts these either into files or in case of a simple message string also t
 In the steganography.py the user input gets parsed and processed. All data is prepared for encoding/decoding. It then passes this data to the encode() and decode() methods written in PNGgraphy.py  
 
 ### PNGgraphy.py
-The real binary encoding and decoding happens here. It's called "PNGgraphy" because the handled image type is png. For example,to encode data into a .jpg file a different encoding is necessary because of jpg-compression.  
+The real binary encoding and decoding happens here. It's called "PNGgraphy" because it encodes only to png images. To encode data into a .jpg file a different encoding is necessary because of jpg-compression.  
 
 ### utils.py
 Some useful helpers  
